@@ -15,7 +15,7 @@ if __name__ == "__main__":
     # create parser
     parser = argparse.ArgumentParser(
                 prog='pdb2fmo.py', # program name
-                usage='python pdb2fmo.py -i xxx.pdb', # program usage 
+                usage='python pdb2fmo.py -i xxx.pdb', # program usage
                 description='generate ABNITMP input (ajf,pdb set) from orig pdb and segment_data file',
                 epilog='end',
                 add_help=True,
@@ -90,7 +90,7 @@ if __name__ == "__main__":
             oname = oname + '-' + aobj.cutmode + '_ar' + str(aobj.criteria)
 
         if aobj.cutmode == 'none':
-            oname = oname +  '-for_abmp'
+            oname = oname
 
         if aobj.cutmode == 'around':
             print('molset', aobj.molname)

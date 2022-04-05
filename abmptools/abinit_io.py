@@ -62,7 +62,7 @@ class abinit_io(mi.mol_io):
         self.resp = True
         self.ligchg = None
         self.rsolv= None
-        self.mldatfrag = False 
+        self.mldatfrag = False
         self.mldatname = None
         self.mllimit = None
         self.disp = False
@@ -227,7 +227,7 @@ Memory=""" + str(self.memory) + """
 Natom=""" + str(self.natom) + """
 Charge=""" + str(ajf_charge) + "\n"
         if not self.is_xyz:
-            ajf_body += """ReadGeom='""" + str(self.readgeom) + "'\n"
+            ajf_body += """ReadGeom='""" + str((self.readgeom).replace('-for_abmp', '')) + "'\n"
         if self.cpfflag:
             ajf_body += "WriteGeom=" + str(self.writegeom) + "\n"
             ajf_body += "CPFVER=" + str(self.cpfver) + "\n"
