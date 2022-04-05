@@ -7,10 +7,10 @@ param = {
             # 'cutmode': 'sphere',
             # 'criteria': 25.0,
 
-            'cutmode': 'around',
-            'criteria': 25.0,,
+            # 'cutmode': 'around',
+            # 'criteria': 25.0,,
 
-            # 'cutmode': 'none',
+            'cutmode': 'none',
 
             'molname': ['000', '001'],
             # 'molname': ['POPC', 'Bulk_water'],
