@@ -1,3 +1,5 @@
+import warnings
+warnings.simplefilter('ignore', FutureWarning)
 import sys
 import os
 scrdir = os.path.abspath(os.path.dirname(__file__))
